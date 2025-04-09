@@ -1,41 +1,63 @@
-/* style.css */
-body {
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
+/* Reset & Base */
+* {
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
   }
   
+  body {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('https://i.pinimg.com/736x/1b/1a/20/1b1a200c29b56d9552ada0cb2875bb56.jpg') 
+                no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+  }
+  
+  /* Container styling */
   .container {
-    max-width: 600px;
-    background: white;
-    margin: auto;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #222;
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 700px;
+    width: 100%;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
   }
+  
+  /* Foto profil */
   .profile-pic {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
   
   .profile-pic img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    width: 180px;
+    height: 180px;
     object-fit: cover;
-    border: 3px solid #007BFF;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
   }
-  .profile-pic {
-    text-align: center;
+  
+  /* Info blocks */
+  .info {
     margin-bottom: 20px;
   }
   
-  .profile-pic img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #007BFF;
+  .info h3 {
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+    color: #444;
   }
-    
+  
+  .info p {
+    margin-left: 10px;
+    line-height: 1.6;
+  }
+  
